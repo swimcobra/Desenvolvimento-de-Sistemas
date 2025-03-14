@@ -23,6 +23,7 @@
     <ul>
         <li><a href="exemplo01.php">Exemplo 01</a></li>
         <li><a href="ex01.php">Exercício 01</a></li>
+        <li><a href="ex02.php">Exercício 02</a></li>
     </ul>
 
 </body>
