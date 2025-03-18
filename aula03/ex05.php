@@ -8,7 +8,7 @@
 <body>
     <p><a href="index.php">Home</a></p>
 
-    <h1>Exercício 04</h1>
+    <h1>Exercício 05</h1>
 
     <p>
     Leia valores nas variáveis A e B, e efetue a troca dos valores de forma que o valor da variável A passe a ser o valor da variável B, e o valor da variável B passe a ser o valor da variável A. presentar uma mensagem com o valor original de cada variável e outra com os valores trocados.
