@@ -66,6 +66,7 @@
             /*ucfirst : torna a inicial da string maiúscula*/
         }
     ?>
-    
+
+    <h3><a href="exemplos.php">Mais Exemplos</a></h3>
 </body>
 </html>
