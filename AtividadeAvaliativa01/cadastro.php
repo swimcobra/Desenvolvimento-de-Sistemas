@@ -34,7 +34,7 @@
                 $aparelho = $_POST['aparelho'];
                 $horas = $_POST['horas'];
                 $dias = $_POST['dias'];
-                $valorKw = $_POST['valorKw'];
+                $valorKw = str_replace(',', '.', $_POST['valorKw']);
                 $consumo = $_POST['consumo'];
 
                 echo "<h3>Nome do Aparelho: " . $aparelho . "</h3>";
