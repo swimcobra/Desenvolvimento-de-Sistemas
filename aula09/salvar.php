@@ -8,7 +8,7 @@
 <body>
     <h1>Aula 09 - Cadastrar Cliente</h1>
     <p>
-        <a href="index.php">Voltar a Home</a>
+        <a href="index.php">Voltar à Home</a>
     </p>
 
     <?php
