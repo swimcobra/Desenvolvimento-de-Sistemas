@@ -19,6 +19,9 @@
     </P>
 
     <?php
+        // Incluir arquivo de validações
+        require_once 'validacoes.php';
+
         // Incluir arquivo de conexão
         require_once 'conexao.php';
 
@@ -35,15 +38,8 @@
         $linhas_afetadas = mysqli_affected_rows($conn);
 
         // Verificar o número de linhas afetadas
-        if($linhas_afetadas == 0) { // Se zero linhas afetadas = não há registros na tabela
-            exit("<h3>Não há clientes para exibir</h3>");
-        }
-
-        // Se número de linhas afetadas for negativo, há erro no sql
-        if($linhas_afetadas < 0) {
-            exit("<h3>Não foi possível realizar a consulta no banco</h3>");
-        }
-
+        verificar_select($linhas_afetadas);
+        
         // Enquanto houver registros armazenados em 'resultado', vamos criar um array associativo para cada registro retornado.
         // Mostraremos na tela, o array associativo a cada iteração do laço.
         echo "<h2>Clientes Cadastrados:</h2>";
