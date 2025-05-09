@@ -39,7 +39,7 @@
 
         // Verificar o número de linhas afetadas
         verificar_select($linhas_afetadas);
-        
+
         // Enquanto houver registros armazenados em 'resultado', vamos criar um array associativo para cada registro retornado.
         // Mostraremos na tela, o array associativo a cada iteração do laço.
         echo "<h2>Clientes Cadastrados:</h2>";
@@ -51,6 +51,7 @@
         echo        "<th>Nome</th>";
         echo        "<th>Telefone</th>";
         echo        "<th>E-mail</th>";
+        echo        "<th>Ações</th>";
         echo    "</tr>";
 
         while($cliente = mysqli_fetch_assoc($resultado)) {
@@ -59,6 +60,9 @@
             echo    "<td>" . $cliente['nome']  . "</td>";
             echo    "<td>" . $cliente['fone']  . "</td>";
             echo    "<td>" . $cliente['email'] . "</td>";
+            echo    "<td>";
+            echo            '<a href="excluir.php?id=' . $cliente['id'] . '">Excluir</a>';
+            echo    "</td>";
             echo "</tr>";
         }
 
