@@ -7,6 +7,10 @@
         return empty($_POST['usuario']) || empty($_POST['senha']);
     }
 
+    function tarefa_em_branco() {
+        return empty($_POST['tarefa']);
+    }
+
     function verificar_codigo() {
         if(!isset($_GET['codigo'])) {
             return;
@@ -26,6 +30,12 @@
                 break;
             case 3:
                 $msg = "<h3>Erro na estrutura da consulta SQL. Verifique com o suporte ou tente novamente mais tarde</h3>";
+                break;
+            case 4:
+                $msg = "Erro ao excluir a tarefa selecionada. Verifique com o suporte ou tente novamente mais tarde";
+                break;
+            case 5:
+                $msg = "Erro ao cadastar tarefa. Verifique com o suporte ou tente novamente mais tarde";
                 break;
             default:
                 $msg = "";
